@@ -11,7 +11,7 @@ const UserContext = ({ children }) => {
   const handleFetchMe = async () => {
     setUserLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/api/v1/auth/me`, {
+      const response = await axios.get(`https://job-job-server.vercel.app/api/v1/auth/me`, {
         withCredentials: true,
       });
       setUserError({ status: false, message: "" });
@@ -27,7 +27,7 @@ const UserContext = ({ children }) => {
     setUserLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/login",
+        "https://job-job-server.vercel.app/api/v1/auth/login",
         data,
         { withCredentials: true }
       );
@@ -44,7 +44,7 @@ const UserContext = ({ children }) => {
     setUserLoading(true);
     try {
       await axios.post(
-        "http://localhost:3000/api/v1/auth/logout",
+        "https://job-job-server.vercel.app/api/v1/auth/logout",
         {},
         { withCredentials: true }
       );

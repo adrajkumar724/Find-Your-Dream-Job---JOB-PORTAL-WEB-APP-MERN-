@@ -7,7 +7,7 @@
 // const Admin = () => {
 //   const { isLoading, isError, data, error } = useQuery({
 //     queryKey: ["admin_info"],
-//     queryFn: () => getAllHandler(`http://localhost:3000/api/v1/admin/info`),
+//     queryFn: () => getAllHandler(`https://job-job-server.vercel.app/api/v1/admin/info`),
 //   });
 
 //   if (isLoading) {
@@ -180,7 +180,7 @@ const Admin = () => {
         queryKey: ["admin_info"],
         queryFn: () =>
             getAllHandler(
-                `http://localhost:3000/api/v1/admin/info`
+                `https://job-job-server.vercel.app/api/v1/admin/info`
             ),
     });
 

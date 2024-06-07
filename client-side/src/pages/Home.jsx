@@ -30,7 +30,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    handleJobFetch(`http://localhost:3000/api/v1/jobs`);
+    handleJobFetch(`https://job-job-server.vercel.app/api/v1/jobs`);
   }, []);
 
   if (jobLoading) {
